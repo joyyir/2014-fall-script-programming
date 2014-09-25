@@ -1,0 +1,11 @@
+def div_path(s):
+	s_range = range(len(s))
+	for k in s_range:
+		if s[k] == '/':
+			index = k
+	path = s[:index]
+	filename = s[index+1:]
+	return path, filename;
+a, b = div_path('/home/chulsoo/test.txt')
+print a
+print b
